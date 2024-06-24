@@ -33,7 +33,7 @@ export default function RootLayout({
         />
         <Suspense fallback={<div>Loading...</div>}>
           <Header />
-          <main>{children}</main>
+          <main className="min-h-dvh">{children}</main>
           <Footer />
         </Suspense>
       </body>
