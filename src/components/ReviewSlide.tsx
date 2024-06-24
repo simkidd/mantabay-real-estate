@@ -32,8 +32,8 @@ const ReviewSlide = () => {
       }}
     >
       {reviews.map((review, i) => (
-        <SwiperSlide>
-          <div key={i} className="bg-white px-6 py-8 shadow-lg rounded-md">
+        <SwiperSlide key={i}>
+          <div className="bg-white px-6 py-8 shadow-lg rounded-md">
             <div className="size-10 bg-primary-100 rounded-full flex items-center justify-center text-primary bg-opacity-20 ">
               <BiSolidQuoteAltLeft />
             </div>
