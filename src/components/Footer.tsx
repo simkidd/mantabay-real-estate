@@ -11,13 +11,13 @@ const Footer = () => {
   return (
     <footer className="w-full bg-[#003C3C] font-montserrat">
       <div className="container mx-auto px-2 w-full divide-y text-white">
-        <div className="grid grid-cols-3 gap-4 py-16 pb-20">
+        <div className="grid grid-cols-1 lg:grid-cols-3 gap-12 lg:gap-4 py-16 pb-20">
           <div className="flex items-start">
             <Image src={Logo} alt="logo" width={250} height={80} />
           </div>
           {/* <div></div> */}
           <div>
-            <h4 className="mb-5 font-semibold text-xl">Contact Us</h4>
+            <h4 className="mb-3 lg:mb-5 font-semibold text-xl">Contact Us</h4>
             <ul className="space-y-2">
               <li className="grid grid-cols-[24px_auto] gap-2">
                 <EnvelopeIcon className="size-5" />
@@ -37,40 +37,40 @@ const Footer = () => {
             </ul>
           </div>
           <div>
-            <h4 className="mb-5 font-semibold text-xl">Socials</h4>
+            <h4 className="mb-3 lg:mb-5 font-semibold text-xl">Socials</h4>
             <div className="flex items-center gap-4">
               <a
                 href=""
                 target="_blank"
-                className="size-[51px] rounded-full bg-primary text-lg flex items-center justify-center hover:text-primary-200 transition-colors duration-300"
+                className="size-[51px] rounded-full bg-primary text-lg flex items-center justify-center hover:text-primary-200 hover:bg-blue transition-colors duration-300"
               >
                 <BsTwitterX />
               </a>
               <a
                 href=""
                 target="_blank"
-                className="size-[51px] rounded-full bg-primary text-lg flex items-center justify-center hover:text-primary-200 transition-colors duration-300"
+                className="size-[51px] rounded-full bg-primary text-lg flex items-center justify-center hover:text-primary-200 hover:bg-blue transition-colors duration-300"
               >
                 <FaFacebookF />
               </a>
               <a
                 href=""
                 target="_blank"
-                className="size-[51px] rounded-full bg-primary text-lg flex items-center justify-center hover:text-primary-200 transition-colors duration-300"
+                className="size-[51px] rounded-full bg-primary text-lg flex items-center justify-center hover:text-primary-200 hover:bg-blue transition-colors duration-300"
               >
                 <FaLinkedinIn />
               </a>
               <a
                 href=""
                 target="_blank"
-                className="size-[51px] rounded-full bg-primary text-lg flex items-center justify-center hover:text-primary-200 transition-colors duration-300"
+                className="size-[51px] rounded-full bg-primary text-lg flex items-center justify-center hover:text-primary-200 hover:bg-blue transition-colors duration-300"
               >
                 <FaInstagram />
               </a>
             </div>
           </div>
         </div>
-        <div className="py-8 flex w-full justify-between items-center text-sm">
+        <div className="py-8 flex w-full justify-between lg:items-center text-sm flex-col lg:flex-row gap-4">
           <p>&copy; MantaBay Limited {getYear}</p>
 
           <p>
